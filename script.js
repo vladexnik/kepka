@@ -1,10 +1,17 @@
-const obj={
-   name: "vlad",
-   "age": 23,
-   2: "c"
+let numberOfFilms=prompt("сколько фильмов посмотрели?");
+let personalMovieDB={
+   count: numberOfFilms,
+   movies: {},
+   actors: {},
+   genres: [],
+   privat: false
 };
+document.write(personalMovieDB.count);
 
-console.log(obj['name']);
-alert(obj[age]);
-// alert(obj.age);
-// alert(obj[2]);
+let film1=prompt("One of last films?");
+let rait1=prompt("which is raiting of it?");
+let film2=prompt("One of last films?");
+let rait2=prompt("which is raiting of it?");
+personalMovieDB.movies[film1]=rait1;
+personalMovieDB.movies[film2]=rait2;
+console.log(personalMovieDB);
